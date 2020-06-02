@@ -22,7 +22,26 @@
           <li><a href="">О компании</a></li>
         </ul>
         <a href="">Поиск</a>
+        <section>
+          <h2 class="visually-hidden">Поиск</h2>
+          <form action="https://echo.htmlacademy.ru" method="GET">
+            <label for="main_search" class="visually-hidden">Поиск</label>
+            <input type="search" id="main_search" placeholder="Крем-брюле">
+          </form>
+        </section>
         <a href="">Вход</a>
+        <section>
+          <h2 class="visually-hidden">Форма входа</h2>
+          <form action="https://echo.htmlacademy.ru" method="POST">
+            <label for="login_email" class="visually-hidden">Логин</label>
+            <input type="email" id="login_email" placeholder="email@example.com">
+            <label for="login_password" class="visually-hidden">Пароль</label>
+            <input type="password" id="login_password" placeholder="123456">
+            <button type="submit" value="Войти">Войти</button>
+            <a href="">Забыли пароль?</a>
+            <a href="">Новая регистрация</a>
+          </form>
+        </section>
         <a href="">
           <span>Иконка корзины</span>
           <span></span> <!-- для числого количества товаров в корзине -->
@@ -53,7 +72,7 @@
         <p><a href="">10 способов сервировки фруктовых щербетов к столу</a></p>
       </article>
       <article>
-        <h2>Подписаться на рассылку</h2>
+        <h2 class="visually-hidden">Подписаться на рассылку</h2>
         <p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <span>Форма для email</span> 
         <button>Отправить</button>
@@ -61,7 +80,7 @@
     </main>
     <footer>
       <section>
-        <h2>Социальные сети</h2>
+        <h2 class="visually-hidden">Социальные сети</h2>
         <ul>
           <li>
             <a href=""><img src="https://via.placeholder.com/32x32" alt="Facebook"></a>
@@ -78,7 +97,7 @@
         </ul>
       </section>
       <nav>
-        <h2>Навигация</h2>
+        <h2 class="visually-hidden">Навигация</h2>
         <ul>
           <li>
             <img src="https://via.placeholder.com/15x13" alt="Сердце">
@@ -100,5 +119,19 @@
         Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2019
       </p>
     </footer>
+    <section>
+      <h2>Мы обязательно вам ответим!</h2>
+      <form action="https://echo.htmlacademy.ru" method="POST">
+        <label for="feedback_name" class="visually-hidden">Имя Фамилия</label>
+        <input type="text" id="feedback_name" placeholder="Имя Фамилия" >
+        <label for="feedback_email" class="visually-hidden">Почта</label>
+        <input type="email" id="feedback_email" placeholder="email@example.com">
+        <label for="feedback_text" class="visually-hidden">Текст обращения</label>
+        <textarea id="feedback_text" placeholder="В свободной форме">
+        </textarea>
+        <button type="submit" value="Отправить">Отправить</button>
+        <button type="button" value="Закрыть">Закрыть</button>
+      </form>
+    </section>
   </body>
 </html>

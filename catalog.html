@@ -28,9 +28,32 @@
                 <span>2</span>    <!-- кол-во товара в корзине -->
                 <span>товара</span>    <!-- тут будет меняться текст, с "Пусто", на "товар", "товара" и т.п. -->
              </a>
+             <section>
+                <h2 class="visually-hidden">Содержимое корзины</h2>
+                <form action="https://echo.htmlacademy.ru" method="POST">
+                <table>
+                    <tr>
+                        <td><button type="button" value="Удалить">Х</button></td>
+                        <td><img src="./img/catalog_items/ice_cream_orange_jam.jpg" height="33" width="33"></td>
+                        <td>Пломбир с апельсиновым джемом</td>
+                        <td>1,5 кг х <span>200 руб.</span></td>
+                        <td>300 руб.</td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" value="Удалить">Х</button></td>
+                        <td><img src="./img/catalog_items/strawberry_cream_white_chocolate_powder.jpg" height="33" width="33"></td>
+                        <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                        <td>1,5 кг х <span>300 руб.</span></td>
+                        <td>450 руб.</td>
+                    </tr>
+                </table>
+                <p>Итого: 750₽</p>
+                <button type="button" >Оформить заказ</button>
+                </form>
+            </section>
         </nav>
         <section>
-            <h2>Время работы</h2>
+            <h2 class="visually-hidden">Время работы</h2>
             с 10 до 20, ежедневно 
             <a href="tel:+78124502525">8 812 450-25-25</a>
         </section>
@@ -117,7 +140,7 @@
     </main>
     <footer>
         <section>
-            <h2>Социальные сети</h2>
+            <h2 class="visually-hidden">Социальные сети</h2>
             <ul>
               <li>
                 <a href=""><img src="https://via.placeholder.com/32x32" alt="Facebook"></a>
@@ -134,7 +157,7 @@
             </ul>
         </section>
           <nav>
-              <h2>Навигация</h2>
+              <h2 class="visually-hidden">Навигация</h2>
                 <ul>
                 <li>
                     <img src="https://via.placeholder.com/15x13" alt="Сердце">
