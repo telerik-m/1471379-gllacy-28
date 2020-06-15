@@ -3,32 +3,42 @@
   <head>
     <meta charset="utf-8">
     <title>Gllacy Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header>
         <a href="index.html"><img src="https://via.placeholder.com/154x64" alt="Лого"></a>
         <nav>
-            <ul>
+            <ul class="site_navigation">
             <li>Каталог
-                <ul>
-                    <li><a href="">Новинки</a></li>
-                    <li><a>Сливочное</a></li>
-                    <li><a href="">Щербеты</a></li>
-                    <li><a href="">Фруктовый лёд</a></li>
-                    <li><a href="">Мелорин</a></li>
+                <ul class="catalog_navigation">
+                        <li><a href="">Новинки</a></li>
+                        <li><a>Сливочное</a></li>
+                        <li><a href="">Щербеты</a></li>
+                        <li><a href="">Фруктовый лёд</a></li>
+                        <li><a href="">Мелорин</a></li>
                 </ul>
             </li>
             <li><a href="">Доставка и оплата</a></li>
             <li><a href="">О компании</a></li>
             </ul>
-            <a href="">Поиск</a>
+            <a href=""><img src="https://via.placeholder.com/32x32" alt="Поиск"></a>
+            <section class="pop_up">
+                <h2 class="visually-hidden">Поиск</h2>
+                <form action="https://echo.htmlacademy.ru" method="GET">
+                    <label for="main_search" class="visually-hidden">Поиск</label>
+                    <input type="search" id="main_search" placeholder="Крем-брюле">
+                </form>
+            </section>
             <a href="">Вход</a>
             <a href="">
                 <span>Иконка корзины</span>
                 <span>2</span>    <!-- кол-во товара в корзине -->
                 <span>товара</span>    <!-- тут будет меняться текст, с "Пусто", на "товар", "товара" и т.п. -->
              </a>
-             <section>
+             <section class="pop_up_basket">
                 <h2 class="visually-hidden">Содержимое корзины</h2>
                 <form action="https://echo.htmlacademy.ru" method="POST">
                 <table>
@@ -47,12 +57,12 @@
                         <td>450 руб.</td>
                     </tr>
                 </table>
-                <p>Итого: 750₽</p>
+                <p>Итого: 750 рублей</p>
                 <button type="button" >Оформить заказ</button>
                 </form>
             </section>
         </nav>
-        <section>
+        <section class="work_time_contact">
             <h2 class="visually-hidden">Время работы</h2>
             с 10 до 20, ежедневно 
             <a href="tel:+78124502525">8 812 450-25-25</a>
@@ -60,7 +70,7 @@
     </header>
     <main>
         <nav>
-            <ul>
+            <ul class="breadcrumbs"> 
                 <li>
                     <a href="index.html">Главная</a>
                 </li> 
@@ -72,10 +82,10 @@
                 </li>
             </ul>
         </nav>
-        <h1>
+        <h1 class="catalog_page_title">
             Сливочное мороженое
         </h1>
-        <section>
+        <section class="items_list">
             <div>
                 <img src="./img/catalog_items/orange_jam_citrus_shavings.jpg" width="267" height="267" alt="Фото мороженого">
                 <p>310 ₽<span>/кг</span></p>
@@ -139,7 +149,7 @@
         </section>
     </main>
     <footer>
-        <section>
+        <section class="social">
             <h2 class="visually-hidden">Социальные сети</h2>
             <ul>
               <li>
@@ -158,7 +168,7 @@
         </section>
           <nav>
               <h2 class="visually-hidden">Навигация</h2>
-                <ul>
+                <ul class="footer_navigation">
                 <li>
                     <img src="https://via.placeholder.com/15x13" alt="Сердце">
                     <a href="">Для поставщиков</a>
@@ -174,7 +184,7 @@
                 </li>
                 </ul>
             </nav>
-          <p>
+          <p class="from_developer">
             <img src="https://via.placeholder.com/108x39" alt="Логотип HTML Academy">
             Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2019
           </p>
